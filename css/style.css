@@ -15,12 +15,12 @@ body div {
 
 header {
   background-color: #333;
+  height: 100px;
   margin-bottom: 30px;
 }
 
 nav {
   display: grid;
-  height: 100px;
   grid-auto-flow: column;
   grid-gap: 30px;
 }
