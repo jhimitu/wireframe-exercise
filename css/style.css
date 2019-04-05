@@ -24,15 +24,11 @@ nav {
 }
 
 nav img {
-  display: grid;
-  justify-content: start;
-  align-content: center;
   padding-left: 212px;
   margin-top: 15px;
 }
 
 nav div {
-  display: grid;
   margin-top: 42px;
   margin-right: 441px;
   grid-gap: 70px;
