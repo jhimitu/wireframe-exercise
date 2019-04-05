@@ -22,6 +22,7 @@ nav {
   display: grid;
   height: 100px;
   grid-auto-flow: column;
+  grid-gap: 30px;
 }
 
 nav img {
