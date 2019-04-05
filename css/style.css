@@ -8,19 +8,21 @@ body div {
   "main-image main-image main-image main-image"
   "middle-imgs middle-imgs middle-imgs middle-imgs"
   "img-and-text img-and-text img-and-text img-and-text";
+  font-family: sans-serif;
 }
 
 /********** HEADER & NAV STYLES **********/
 
 header {
   background-color: #333;
+  height: 100px;
   margin-bottom: 30px;
 }
 
 nav {
   display: grid;
-  height: 100px;
   grid-auto-flow: column;
+  grid-gap: 30px;
 }
 
 nav img {
@@ -29,8 +31,8 @@ nav img {
 }
 
 nav div {
-  margin-top: 42px;
-  margin-right: 441px;
+  margin-top: 45px;
+  margin-right: 440px;
   grid-gap: 70px;
 }
 
