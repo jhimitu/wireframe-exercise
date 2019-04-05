@@ -25,18 +25,21 @@ header {
 header img {
   margin-top: 15px;
   grid-area: logo;
+  margin-left: 212px;
 }
 
 header nav {
   grid-area: nav;
+  margin-right: 400px;
 }
 
 ul {
+  color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
   "first second third fourth";
-  grid-column-gap: 50px;
+  grid-column-gap: 70px;
 }
 
 nav:nth-child(0) {
@@ -60,7 +63,6 @@ nav:nth-child(3) {
 /**** top image ****/
 
 div section:nth-child(1) {
-  border: 2px solid pink;
   grid-area: main-image;
 }
 
@@ -119,4 +121,10 @@ footer {
   background-color: #333;
   height: 100px;
   margin-top: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 45px;
 }
