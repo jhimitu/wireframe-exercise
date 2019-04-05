@@ -108,6 +108,11 @@ div section:nth-child(4) aside {
   grid-area: aside;
 }
 
+aside p {
+  height: 370px;
+  overflow: scroll;
+}
+
 /********** FOOTER STYLES **********/
 
 footer {
