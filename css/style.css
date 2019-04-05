@@ -3,21 +3,20 @@ body div {
   max-width: 960px;
   margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  /* grid-auto-rows: minmax(100px, auto); */
   grid-gap: 30px;
   grid-template-areas: 
-  "header header header header"
   "main-image main-image main-image main-image"
   "middle-imgs middle-imgs middle-imgs middle-imgs"
-  "img-and-text img-and-text img-and-text img-and-text"
-  "footer footer footer footer";
+  "img-and-text img-and-text img-and-text img-and-text";
 }
 
 /********** HEADER & NAV STYLES **********/
 
 header {
-  grid-area: header;
   background-color: #333;
+  margin-bottom: 30px;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "logo nav nav nav";
@@ -60,14 +59,14 @@ nav:nth-child(3) {
 
 /**** top image ****/
 
-div section:nth-child(2) {
+div section:nth-child(1) {
   border: 2px solid pink;
   grid-area: main-image;
 }
 
 /**** middle images ****/
 
-div section:nth-child(3) {
+div section:nth-child(2) {
   grid-area: middle-imgs;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -76,35 +75,36 @@ div section:nth-child(3) {
   height: 375px;
 }
 
-div section:nth-child(3) img:nth-child(0) {
+div section:nth-child(2) img:nth-child(1) {
   grid-area: img-one;
 }
 
-div section:nth-child(3) img:nth-child(1) {
+div section:nth-child(2) img:nth-child(2) {
   grid-area: img-two;
 }
 
-div section:nth-child(3) img:nth-child(2) {
+div section:nth-child(2) img:nth-child(3) {
   grid-area: img-three;
 }
 
 /**** image and aside text ****/
 
-div section:nth-child(4) {
+div section:nth-child(3) {
   grid-area: img-and-text;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-auto-rows: 400px;
   grid-template-areas: "img aside";
   grid-column-gap: 30px;
+  grid-row-gap: 30px;
   height: 400px;
 }
 
-div section:nth-child(4) img {
+div section:nth-child(3) img {
   grid-area: img;
 }
 
-div section:nth-child(4) aside {
+div section:nth-child(3) aside {
   grid-area: aside;
 }
 
@@ -116,6 +116,7 @@ aside p {
 /********** FOOTER STYLES **********/
 
 footer {
-  grid-area: footer;
   background-color: #333;
+  height: 100px;
+  margin-top: 30px;
 }
