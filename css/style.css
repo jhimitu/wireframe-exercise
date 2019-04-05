@@ -3,7 +3,6 @@ body div {
   max-width: 960px;
   margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-auto-rows: minmax(100px, auto); */
   grid-gap: 30px;
   grid-template-areas: 
   "main-image main-image main-image main-image"
@@ -17,45 +16,35 @@ header {
   background-color: #333;
   margin-bottom: 30px;
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "logo nav nav nav";
+  grid-template-areas: "logo nav nav nav"; */
 }
 
-header img {
+nav {
+  display: grid;
+  height: 100px;
+  grid-auto-flow: column;
+}
+
+nav img {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  padding-left: 212px;
   margin-top: 15px;
-  grid-area: logo;
-  margin-left: 212px;
 }
 
-header nav {
-  grid-area: nav;
-  margin-right: 400px;
-}
-
-ul {
-  color: #fff;
+nav div {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  "first second third fourth";
-  grid-column-gap: 70px;
+  margin-top: 42px;
+  margin-right: 441px;
+  grid-gap: 70px;
 }
 
-nav:nth-child(0) {
-  grid-area: first;
-}
-
-nav:nth-child(1) {
-  grid-area: second;
-}
-
-nav:nth-child(2) {
-  grid-area: third;
-}
-
-nav:nth-child(3) {
-  grid-area: fourth;
+a {
+  color: #6d6d6d;
+  text-decoration: none;
 }
 
 /********** MAIN CONTENT **********/
@@ -116,7 +105,7 @@ aside p {
 }
 
 button {
-  color: #fff;
+  color: #6d6d6d;
   background-color: black;
   padding: 10px 18px;
   font-size: 14px;
@@ -128,7 +117,7 @@ footer {
   background-color: #333;
   height: 100px;
   margin-top: 30px;
-  color: #fff;
+  color: #6d6d6d;
   text-align: center;
 }
 
